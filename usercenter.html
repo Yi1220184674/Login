@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="img/favicon.ico">
+  <title>用户中心 — 京东商城</title>
+  <link rel="stylesheet" href="jd.css">
+ </head>
+ <body>
+  <div id="header"></div>
+  <div id="main">
+	<!-- 左侧的附加导航 -->
+	<div class="affix">
+		<h4>我的京东</h4>
+		<ul>
+			<li class="active"><a href="#my-order-container">我的订单</a></li>
+			<li><a href="#buy-stat-container">消费统计</a></li>
+			<li><a href="#luck-lottery-container">幸运抽奖</a></li>
+		</ul>	
+	</div>
+	<!-- 右侧的主体显示区域 -->
+	<div class="right">
+		<div class="active" id="my-order-container">
+		  <table id="order-table">
+		    <thead>
+		    	<tr>
+		    		<th>订单信息</th>
+		    		<th>收货人</th>
+		    		<th>订单金额</th>
+		    		<th>
+					  <select id="">
+					    <option value="m1">最近一个月</option>
+					    <option value="m3">最近三个月</option>
+					    <option value="m6">最近六个月</option>
+					  </select>
+					</th>
+		    		<th>
+					  <select id="">
+					    <option value="1">等待付款</option>
+					    <option value="2">等待发货</option>
+					    <option value="3">派货中</option>
+					    <option value="4">已完成</option>
+					    <option value="5">废单</option>
+					  </select>
+					</th>
+		    		<th>操作</th>
+		    	</tr>
+		    </thead>
+			<tbody>
+			<!--
+			  <tr>
+				<td colspan="6">
+				订单编号：23746174223
+				<a href="#">京东自营</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <a href="#"><img src="img/prod1.jpg"></a>
+				  <a href="#"><img src="img/prod2.jpg"></a>
+				</td>
+				<td>qiangdong</td>
+				<td>
+				  ￥123.00<br>
+				  在线付款
+				</td>
+				<td>
+				  2016-10-25<br>
+				  10:22:15
+				</td>
+				<td>
+				  等待付款
+				</td>
+				<td>
+				  <a href="#">查看</a><br>
+				  <a href="#">详细信息</a><br>
+				  <a href="#">删除</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td colspan="6">
+				订单编号：23746174223
+				<a href="#">京东自营</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <a href="#"><img src="img/prod1.jpg"></a>
+				  <a href="#"><img src="img/prod2.jpg"></a>
+				</td>
+				<td>qiangdong</td>
+				<td>
+				  ￥123.00<br>
+				  在线付款
+				</td>
+				<td>
+				  2016-10-25<br>
+				  10:22:15
+				</td>
+				<td>
+				  等待付款
+				</td>
+				<td>
+				  <a href="#">查看</a><br>
+				  <a href="#">详细信息</a><br>
+				  <a href="#">删除</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td colspan="6">
+				订单编号：23746174223
+				<a href="#">京东自营</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <a href="#"><img src="img/prod1.jpg"></a>
+				  <a href="#"><img src="img/prod2.jpg"></a>
+				</td>
+				<td>qiangdong</td>
+				<td>
+				  ￥123.00<br>
+				  在线付款
+				</td>
+				<td>
+				  2016-10-25<br>
+				  10:22:15
+				</td>
+				<td>
+				  等待付款
+				</td>
+				<td>
+				  <a href="#">查看</a><br>
+				  <a href="#">详细信息</a><br>
+				  <a href="#">删除</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td colspan="6">
+				订单编号：23746174223
+				<a href="#">京东自营</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <a href="#"><img src="img/prod1.jpg"></a>
+				  <a href="#"><img src="img/prod2.jpg"></a>
+				</td>
+				<td>qiangdong</td>
+				<td>
+				  ￥123.00<br>
+				  在线付款
+				</td>
+				<td>
+				  2016-10-25<br>
+				  10:22:15
+				</td>
+				<td>
+				  等待付款
+				</td>
+				<td>
+				  <a href="#">查看</a><br>
+				  <a href="#">详细信息</a><br>
+				  <a href="#">删除</a>
+				</td>
+			  </tr>
+			  -->
+			</tbody>
+		  </table>
+		
+		  <ul class="pager">
+		  <!--
+		  	<li><a href="#">1</a></li>
+		  	<li><a href="#">2</a></li>
+		  	<li class="active"><a href="#">3</a></li>
+		  	<li><a href="#">4</a></li>
+		  	<li><a href="#">5</a></li>
+		  -->
+		  </ul>
+		</div>
+		<div id="buy-stat-container">消费统计</div>
+		<div id="luck-lottery-container">幸运抽奖</div>
+	</div>
+  </div>
+  <div id="footer"></div>
+
+  <!--登录对话框--> 	
+  <div class="modal">
+    <div class="modal-dialog">
+	  <div class="modal-content">
+		<h4 >用户登录</h4>
+		<p class="msg">请保管您的注册信息。</p>
+		<form id="login-form">
+			<input type="text" name="user_name">
+			<input type="password" name="user_pwd">
+			<button type="button" id="bt-login">提交登录信息</button>
+		</form>
+	  </div>
+	</div>
+  </div>
+  
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jd.js"></script>
+ </body>
+</html>
